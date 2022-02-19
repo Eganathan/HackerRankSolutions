@@ -1,13 +1,13 @@
-//blog post : 		
-public static int beautifulDays(int i, int j, int k) {
-			int count = 0;
+//blog post : https://tekanath.blogspot.com/2022/02/chocolate-feast-problem-solving-hacker.html
+//Method Block
+	public static int chocolateFeast(int n, int c, int m) {
+		int cho = n / c, wrap = cho;
 
-			for (; i <= j; i++) {
+		while (wrap >= m) {
+			cho += wrap / m;
+			wrap = wrap / m + wrap % m;
 
-				int diff = Math.abs(i - reverse(i));
-
-				if (diff % k == 0)
-					count++;
-			}
-			return count;
 		}
+
+		return cho;
+	}
