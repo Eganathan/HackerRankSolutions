@@ -1,4 +1,4 @@
-//method		
+//blog post : 		
 public static int beautifulDays(int i, int j, int k) {
 			int count = 0;
 
